@@ -1,0 +1,17 @@
+@import "./scss/resets";
+@import "./scss/center";
+@import "./scss/variables";
+@import "./scss/btns";
+@import "./scss/PNHs";
+@import "./scss/form";
+//@import "./scss/drag&drop";
+@import "./scss/notification";
+@import "./scss/navBar";
+@import "./scss/project";
+@import "./scss/footer";
+
+.container {
+  @include center();
+  margin-top: 2vh;
+  padding: 6vh;
+}

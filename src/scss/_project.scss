@@ -1,0 +1,47 @@
+#projects {
+  display: grid;
+  margin: 1rem 3rem;
+  gap: 3vw;
+}
+
+.projectTitle {
+  text-decoration: underline;
+  letter-spacing: $spacing;
+  font-family: map-get($map: $primary-fonts, $key: "f3");
+}
+
+.projectURL {
+  display: grid;
+  grid-template-rows: 75% 25%;
+  gap: 2vw;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  align-items: center;
+  text-decoration: none;
+  background-color: map-get($map: $primary-greys, $key: "g2");
+
+  &:hover {
+    transform: map-get($map: $scale, $key: "small");
+    box-shadow: $shadow-5;
+  }
+}
+.projectImg {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  size: cover;
+}
+.projectName {
+  margin: 5px 15px;
+  letter-spacing: $letterSpacing;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@media (min-width: 822px) {
+  #projects {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 1rem 3rem;
+    gap: 3vw;
+  }
+}
